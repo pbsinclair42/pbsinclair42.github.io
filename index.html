@@ -1,7 +1,51 @@
 <head>
-    <title>WIP</title>
+    <style>
+        body{
+            margin:0;
+        }
+        a{
+            height:100%;
+            width:50%;
+            background-position: center;
+            background-size: cover;
+            transition: filter 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: flex-end;
+        }
+        a:hover{
+            filter: brightness(70%);
+        }
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 4vmax;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 2px;
+            font-family: 'Source Sans Pro', sans-serif;
+            width: 100%;
+
+        }
+        h1:hover{
+            filter: brightness(100%);
+        }
+        #left{
+            background-image:url('static/comp.jpg');
+        }
+        #right{
+            background-image: url('static/horn.jpg');
+        }
+        #border{
+            height: 100%;
+            position: absolute;
+            width: 10px;
+            background-color: black;
+            top: 0%;
+            left: 50%;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello world!</h1>
-    <a href='deepspace'>Play deepspace, a pretension simulator made in 12 hours as part of EU GameDevSoc's game jam, 12/11/16.</a>
+    <a href='cs.html' id='left'><h1>Computing</h1></a><a href='music.html' id='right'><h1>Music</h1></a>
+    <div id='border'></div>
 </body>
